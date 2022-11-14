@@ -1,14 +1,13 @@
 import React from 'react';
-import logo from './meh.png';
-import './App.css';
+import Theme from './Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>your mum gay</p>
-      </header>
+    <div className={`App ${Theme}`}>
+      <div className="App-header">
+        <p>This test is about the best dog breeds</p>
+        <img src={require('./Dog1.jpeg')} alt="Doggo poggo" />
+      </div>
     </div>
   );
 }
