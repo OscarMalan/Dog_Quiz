@@ -1,10 +1,10 @@
-import React from 'react';
 import './Error.css';
 
 function Error() {
   return (
     <div id='error'>
-    <p>Error 404</p>
+    <h1>Error 404</h1>
+    <p>Sucks to go to the wrong page right?</p>
     </div>
   );
 }

@@ -6,13 +6,6 @@ nav {
     text-align: center;
 }
 
-h1 {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-    font-size: 40px;
-    padding-bottom: 20px;
-}
-
 a {
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;

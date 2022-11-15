@@ -1,5 +1,4 @@
 import './Navbar.css';
-import React from 'react';
 import { useState, useEffect } from "react";
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
@@ -22,7 +21,6 @@ const Navbar = () => {
                 <a href="/">Home</a>
                 <a href="/test">Begin Test</a>
                 <a href="/admin">Admin</a>
-                <a href="/pp">Error page</a>
                 <button><img src={require('./Darkmode_Lightmode.png')} alt='darkmode_lightmode' onClick={ToggleTheme} /></button>
             </nav>
         </div>

@@ -1,18 +1,22 @@
-import React from 'react';
-import { useState, useEffect } from "react";
-import Cookies from 'universal-cookie';
-const cookies = new Cookies();
-let Default_Mode: string = 'light';
-if (typeof cookies.get('Darkmode') !== 'undefined'){Default_Mode = cookies.get('Darkmode');}
-console.log(cookies.get('Darkmode'));
+import { useState } from "react";
+import './Test.css';
 
 function Test() {
-  const [Theme] = useState(Default_Mode);
-  useEffect(() => {
-    document.body.className = Theme;
-  }, [Theme]);
+  const [Data,Set_Data]=useState(null)
+  function Get_Data(val: any){
+    Set_Data(val.target.value)
+  }
+  function Store_Name() {
+    if (Data === null){}
+    else {console.log(Data);}
+  }
   return (
-    <p>Hello world</p>
+    <div id="Test">
+      <h1>Time to begin the Test</h1>
+      <p>Please enter a username</p>
+      <input type="text" onChange={Get_Data} />
+      <button><img src={require('./thumbs-up.png')} alt='darkmode_lightmode' onClick={Store_Name} /></button>
+    </div>
   );
 }
 
