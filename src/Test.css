@@ -6,7 +6,7 @@
     text-align: center;
     text-decoration: none;
     font-size: 45px;
-    width: 260px;
+    width: 380px;
     border-radius: 12px;
     display: inline;
     margin: 50px 30px;
@@ -16,8 +16,14 @@
     background-color: rgba(230,230,230);
 }
 
-#Success_Box {
-    width: 200px;
-    height: 100px;
-    background-color: blue;
+#Dog_Button button{
+    background: none;
+    border: none;
+}
+
+#Dog_Button img {
+    position: fixed; bottom: 0px;
+    height: 60%;
+    width: 30%;
+    background: none;
 }

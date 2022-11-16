@@ -5,22 +5,52 @@
         "Answer":"Spaniel"
     },
     {
-        "Question":"2.  ",
-        "Options": ["Option 1", "Option 2", "Option 3"],
-        "Answer":"Option 1"
+        "Question":"2.  Which is the most popular breed of dog in the UK?",
+        "Options": ["German Shepherd", "Labrador", "Beagle"],
+        "Answer":"Beagle"
     },
     {
-        "Question":"3.  ",
-        "Options": ["Option 1", "Option 2", "Option 3"],
-        "Answer":"Option 1"
+        "Question":"3.  Why is the poodle so ugly?",
+        "Options": ["They look stupid", "They are stuck-up", "Both"],
+        "Answer":"Both"
     },
     {
-        "Question":"4.  ",
-        "Options": ["Option 1", "Option 2", "Option 3"],
-        "Answer":"Option 1"
+        "Question":"4.  Which dog breed is the rarest?",
+        "Options": ["Azawakh", "Lunehund", "Otterhound"],
+        "Answer":"Lunehund"
     },
     {
-        "Question":"5.  Which is the best Spaniel variant?",
+        "Question":"5.  Which breed was the first ever dog?",
+        "Options": ["Mid-Vurshaan", "Golha-Dov", "Bonn-Oberkassel"],
+        "Answer":"Bonn-Oberkassel"
+    },
+    {
+        "Question":"6.  Which is the smartest dog (not bias)",
+        "Options": ["Pitbull", "Border Collie", "Spaniel"],
+        "Answer":"Spaniel"
+    },
+    {
+        "Question":"7.  Which is the cutest dog?",
+        "Options": ["Jack Russel", "Dalmation", "Spaniel"],
+        "Answer":"Dalmation"
+    },
+    {
+        "Question":"8.  What is the least popular dog?",
+        "Options": ["Cinook", "Foxhound", "Cesky Terrier"],
+        "Answer":"Cesky Terrier"
+    },
+    {
+        "Question":"9.  Why are dogs so loyal?",
+        "Options": ["We smelt nice", "We are stronger", "We had food"],
+        "Answer":"We had food"
+    },
+    {
+        "Question":"10.  What is the average dog IQ",
+        "Options": ["78", "100", "69"],
+        "Answer":"100"
+    },
+    {
+        "Question":"11.  Which is the best Spaniel variant?",
         "Options": ["Cocker", "Clumber", "Springer"],
         "Answer":"Cocker"
     }

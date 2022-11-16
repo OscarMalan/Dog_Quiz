@@ -17,7 +17,7 @@ a {
     font-family: 'Ubuntu', sans-serif;
     color: #000000;
     text-decoration: none;
-    padding: 33px 20px;
+    padding: 27px 20px;
     text-align: center;
     display: inline-block;
 }
@@ -39,6 +39,6 @@ a {
     height: 64px;
     border: none;
     background: none;
-    float: right;
     overflow: visible;
+    position: fixed; right: 2px;
   }

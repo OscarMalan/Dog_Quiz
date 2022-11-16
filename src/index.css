@@ -25,6 +25,19 @@ h1 {
   text-align: center;
 }
 
-img {
-  background: none;
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 8px;
+}
+
+#App img{
+  overflow: visible;
+  position: fixed; right: 2px;
 }

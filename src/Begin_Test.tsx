@@ -1,7 +1,6 @@
 import { useState } from "react";
 import React, { useEffect } from 'react';
 import './Begin_Test.css';
-import { Console } from "console";
 
 export let UserName: any;
 
@@ -24,7 +23,7 @@ function Begin_Test() {
       <h1>Time to begin the Test</h1>
       <p>Please enter a username</p>
       <input type="text" onChange={Get_Data} />
-      <button><img src={require('./thumbs-up.png')} alt='darkmode_lightmode' onClick={Store_Name} /></button>
+      <button onClick={Store_Name}>button</button>
     </div>
   );
 }

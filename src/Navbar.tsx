@@ -17,12 +17,13 @@ const Navbar = () => {
     return (
         <div id="navbar">
             <nav className='Navbar'>
-                <h1>Dog Test</h1>
-                <a href="/">Home</a>
-                <a href="/begin_test">Begin Test</a>
-                <a href="/leaderboard">Leaderboard</a>
+              <h1>Dog Test</h1>
+              <a href="/">Home</a>
+              <a href="/begin_test">Begin Test</a>
+              <a href="/leaderboard">Leaderboard</a>
+              <a href="/test">Testing test page</a>
+              <button><img src={require('./Darkmode_Lightmode.png')} alt='darkmode_lightmode' onClick={ToggleTheme} /></button>
             </nav>
-            <button><img src={require('./Darkmode_Lightmode.png')} alt='darkmode_lightmode' onClick={ToggleTheme} /></button>
         </div>
     );
 }
