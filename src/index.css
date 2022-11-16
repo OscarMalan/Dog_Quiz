@@ -1,14 +1,14 @@
 .dark {
-  background-color:rgb(9, 43, 105);
-  color: aliceblue;
+  background-color:#003669;
+  color: rgb(255, 255, 255)
 }
 .light {
-  background-color:rgb(65, 120, 223);
-  color: rgb(0, 0, 0);
+  background-color:#00539C;
+  color: rgb(255, 255, 255);
 }
 
 p {
-  size: 20px;
+  size: 40px;
   font-family: 'Marhey', cursive;
   text-align: center;
 }
@@ -17,7 +17,7 @@ h1 {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
   font-size: 40px;
-  padding-bottom: 20px;
+  /* padding: 20px; */
   text-align: center;
 }
 

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Theme from './Navbar';
 
 function App() {
+  useEffect(() => {
+    document.title = 'Home';
+  }, []);
   return (
     <div className={`App ${Theme}`}>
       <div className="App-header">

@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
-import Admin from './Admin';
+import Leaderboard from './Leaderboard';
 import Error from './Error';
 import Navbar from './Navbar';
+import BeginTest from './Begin_Test';
 import Test from './Test';
+import Results from './Results';
 import reportWebVitals from './reportWebVitals';
 import Layout from './Layout';
 import './reset.css';
@@ -21,8 +23,10 @@ root.render(
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<App />} />
+          <Route path='begin_test' element={<BeginTest />} />
+          <Route path='leaderboard' element={<Leaderboard />} />
           <Route path='test' element={<Test />} />
-          <Route path='admin' element={<Admin />} />
+          <Route path='results' element={<Results />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>

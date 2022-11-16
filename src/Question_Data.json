@@ -1,27 +1,27 @@
-{   
-    "Question1": {
-        "Question":"this is the first question",
-        "Options": ["Option1", "Option2"],
-        "Answer":"Option1"
+[
+    {
+        "Question":"1.  Which is the best Dog breed for hunting?",
+        "Options": ["Begal", "Spaniel", "Blood Hound"],
+        "Answer":"Spaniel"
     },
-    "Question2": {
-        "Question":"this is the first question",
-        "Options": ["Option1", "Option2"],
-        "Answer":"Option1"
+    {
+        "Question":"2.  ",
+        "Options": ["Option 1", "Option 2", "Option 3"],
+        "Answer":"Option 1"
     },
-    "Question3": {
-        "Question":"this is the first question",
-        "Options": ["Option1", "Option2"],
-        "Answer":"Option1"
+    {
+        "Question":"3.  ",
+        "Options": ["Option 1", "Option 2", "Option 3"],
+        "Answer":"Option 1"
     },
-    "Question4": {
-        "Question":"this is the first question",
-        "Options": ["Option1", "Option2"],
-        "Answer":"Option1"
+    {
+        "Question":"4.  ",
+        "Options": ["Option 1", "Option 2", "Option 3"],
+        "Answer":"Option 1"
     },
-    "Question5": {
-        "Question":"this is the first question",
-        "Options": ["Option1", "Option2"],
-        "Answer":"Option1"
+    {
+        "Question":"5.  Which is the best Spaniel variant?",
+        "Options": ["Cocker", "Clumber", "Springer"],
+        "Answer":"Cocker"
     }
-}
+]

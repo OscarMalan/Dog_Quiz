@@ -19,10 +19,10 @@ const Navbar = () => {
             <nav className='Navbar'>
                 <h1>Dog Test</h1>
                 <a href="/">Home</a>
-                <a href="/test">Begin Test</a>
-                <a href="/admin">Admin</a>
-                <button><img src={require('./Darkmode_Lightmode.png')} alt='darkmode_lightmode' onClick={ToggleTheme} /></button>
+                <a href="/begin_test">Begin Test</a>
+                <a href="/leaderboard">Leaderboard</a>
             </nav>
+            <button><img src={require('./Darkmode_Lightmode.png')} alt='darkmode_lightmode' onClick={ToggleTheme} /></button>
         </div>
     );
 }

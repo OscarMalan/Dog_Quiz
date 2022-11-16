@@ -1,0 +1,10 @@
+#Begin_Test button {
+    text-align: center;
+    border: none;
+    background: none;
+}
+
+#Begin_Test input {
+    text-align: center;
+    align-self: center;
+}

@@ -1,27 +1,44 @@
-nav {
-    background-color: rgb(52, 79, 134);
-    color: aliceblue;
+.dark nav {
+    background-color: #ba8063;
+    color: #000000;
     position: sticky; top: 0;
-    height: 139px;
+    text-align: center;
+}
+
+.light nav {
+    background-color:#FFD662;
+    color: #000000;
+    position: sticky; top: 0;
     text-align: center;
 }
 
 a {
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
-    color: aliceblue;
+    color: #000000;
     text-decoration: none;
     padding: 33px 20px;
+    text-align: center;
+    display: inline-block;
 }
 
-a:hover {
-    background-color: rgb(36, 56, 95);
-  }
+.dark a:hover {
+    background-color: #ad785c;
+    text-align: center;
+    display: inline-block;
+}
 
-button {
+.light a:hover {
+    background-color: #f2cb5c;
+    text-align: center;
+    display: inline-block;
+}
+
+#navbar button {
     width: 64px;
     height: 64px;
     border: none;
     background: none;
     float: right;
+    overflow: visible;
   }
