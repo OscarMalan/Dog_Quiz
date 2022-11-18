@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-interface LeaderboardDataItem {
-  id: number,
-  Username: string,
-  Score: number,
-}
+import { LeaderboardDataItem } from './Admin';
 
 function Leaderboard() {
   const [Data, setData] = useState<LeaderboardDataItem[]>([]);

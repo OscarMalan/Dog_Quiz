@@ -28,7 +28,7 @@ function Results() {
       <p>Congratulations {Username}</p>
       <p>You scored {Score}/11</p>
       <p>And the best dog breed is Cocker Spaniel</p>
-      <img src={require("./Spaniel.jpg")} alt="best doggo" />
+      <img src={require("./Spaniel.png")} alt="best doggo" />
     </div>
   );
 }

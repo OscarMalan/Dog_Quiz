@@ -1,3 +1,7 @@
 #Admin {
     text-align: center;
 }
+
+#Admin button {
+    cursor: pointer;
+}

@@ -5,25 +5,23 @@
 
 #Begin_Test input {
     text-align: center;
-    align-self: center;
     width:200px;
     height: 50px;
     font-size: 30px;
 }
 
 #Begin_Test img {
-    align-self: center;
     position: fixed; left: 0px;
 }
 
 #Begin_Test button {
     text-align: center;
     border: none;
-    text-decoration: none;
     font-size: 22px;
     border-radius: 12px;
     display: inline;
     margin: 50px 25px;
+    cursor: pointer;
 }
 
 #Begin_Test button:hover {

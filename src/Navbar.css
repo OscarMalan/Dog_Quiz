@@ -20,6 +20,7 @@ a {
     padding: 27px 20px;
     text-align: center;
     display: inline-block;
+    cursor: pointer;
 }
 
 .dark a:hover {
@@ -41,4 +42,5 @@ a {
     background: none;
     overflow: visible;
     position: fixed; right: 2px;
+    cursor: pointer;
   }

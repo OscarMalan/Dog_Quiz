@@ -4,8 +4,7 @@ import data from './Question_Data.json';
 import './Test.css';
 
 // Variables that are used everywhere
-let i = 0;
-let wrong = 0;
+let Wrong = 0;
 let Bark_Audio = new Audio('Bark.mp3');
 let Fart_Audio = new Audio('Fart.wav');
 let Fart_Empty_Audio = new Audio('Fart_Empty.wav');
@@ -28,30 +27,29 @@ const Test = () => {
             Score++;
         }
         else{
-            wrong++;
+            Wrong++;
             // Controls poodle size, has the if(null) because typescript gets worried
             if (Doomed_Dog !== null)
-                {Doomed_Dog.style.width = 480 + (wrong * 160) + "px";}}
+                {Doomed_Dog.style.width = 480 + (Wrong * 160) + "px";}
+        }
             // sends user to results page when done all questions
             if (QuestionNumber === 10){
                 sessionStorage.setItem('Score', Score.toString());
                 navigate('/results')
 
         }
-        // updates the question
-        i++;
-        setQuestionNumber(i);
+        setQuestionNumber(QuestionNumber + 1);
     }
 
     // Controls the audio and deflations
     function Bark(){
         const Doomed_Dog = document.getElementById("doomed_dog");
-        if (wrong >=8) {
+        if (Wrong >=8) {
             Fart_Empty_Audio.play();
             if (Doomed_Dog !== null)
-            {Doomed_Dog.style.width = "480px"; wrong = 0;}
+            {Doomed_Dog.style.width = "480px"; Wrong = 0;}
         }
-        else if (wrong >= 5) 
+        else if (Wrong >= 5) 
         {Fart_Audio.play()}
         else
         {Bark_Audio.play()}

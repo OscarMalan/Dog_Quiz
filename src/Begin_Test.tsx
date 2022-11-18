@@ -2,7 +2,6 @@ import React, { useEffect, useState} from 'react';
 import { useNavigate } from "react-router-dom";
 import './Begin_Test.css';
 
-let Username: any;
 
 function Begin_Test() {
   useEffect(() => {
@@ -18,16 +17,12 @@ function Begin_Test() {
   
     let navigate = useNavigate();
 
-    const [Data,Set_Data]=useState(null)
-  function Get_Data(Val: any) {
-    Set_Data(Val.target.value)
-  }
+    const [Username,Set_Username]=useState<string>(sessionStorage.getItem('Username') ?? '')
   
   function Store_Name() {
-    if (Data === null || Data == ""){}
+    if (Username === null || Username === ""){}
     else {
-      Username = Data;
-      sessionStorage.setItem('Username', Username.toString());
+      sessionStorage.setItem('Username', Username);
       navigate('/test')
     }
   }
@@ -36,7 +31,7 @@ function Begin_Test() {
     <div id="Begin_Test">
       <h1>Time to begin the Test</h1>
       <p>Please enter a Username for the test. This will be used for you to help reference you on the leaderboard.</p>
-      <input type="text" onChange={Get_Data} placeholder="Your name" />
+      <input type="text" onChange={(Event) => Set_Username(Event.target.value)} placeholder="Your name" />
       <button onClick={Store_Name}>button</button>
       <img src={require("./Golden.png")} alt="good doggo" />
     </div>

@@ -1,10 +1,9 @@
-import { wait } from '@testing-library/user-event/dist/utils';
 import React, { useEffect, useState } from 'react';
 import './Admin.css';
 
 // TSX doesn't like not knowing what each variable's type is, so is defined in an interface here.
 // An interface is enforcing the requirment for the types to be declared.
-interface LeaderboardDataItem {
+export interface LeaderboardDataItem {
   id: number,
   Username: string,
   Score: number,
@@ -26,12 +25,12 @@ function Admin() {
   }, []);
 
   // Deletes entries in the API
-  function Delete_Entry(id: any){
+  function Delete_Entry(id: number) {
     fetch('https://b4rktd62ol.execute-api.eu-west-2.amazonaws.com/items/' + id, {
     // The method is the HTTP request (GET, POST, DELTE, PUT, etc)
     method: "DELETE",
     // Drop down won't update till reload, so have a .then holding the reload function.
-    }) .then(() => window.location.reload());
+    }).then(() => window.location.reload());
   }
 
   // Points which entry needs to be removed from the drop down
@@ -51,7 +50,7 @@ function Admin() {
             <option value={User.id} key={User.id}>{User.id} {User.Username}</option> 
         );})}
       </select>
-      <button onClick={() => Delete_Entry(Selected_ID)}>Delete</button>
+      <button onClick={() => {if (typeof Selected_ID !== 'undefined') {Delete_Entry(Selected_ID);}}}>Delete</button>
     </div>
   );
 }

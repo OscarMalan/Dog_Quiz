@@ -14,10 +14,8 @@ p {
 }
 
 h1 {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-size: 40px;
-  /* padding: 20px; */
   text-align: center;
 }
 
