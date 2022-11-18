@@ -1,7 +1,7 @@
 [
     {
         "Question":"1.  Which is the best Dog breed for hunting?",
-        "Options": ["Begal", "Spaniel", "Blood Hound"],
+        "Options": ["Beagle", "Spaniel", "Blood Hound"],
         "Answer":"Spaniel"
     },
     {
@@ -41,8 +41,8 @@
     },
     {
         "Question":"9.  Why are dogs so loyal?",
-        "Options": ["We smelt nice", "We are stronger", "We had food"],
-        "Answer":"We had food"
+        "Options": ["We smell nice", "We are stronger", "We have food"],
+        "Answer":"We have food"
     },
     {
         "Question":"10.  What is the average dog IQ",

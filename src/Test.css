@@ -1,5 +1,5 @@
 #Buttons {
-    text-align: center;
+    text-align: center;transition: all 0.3s ease-out 0s;
 }
 
 #button {
@@ -24,6 +24,10 @@
 #Dog_Button img {
     position: fixed; bottom: 0px;
     height: 60%;
-    width: 30%;
+    width: 480px;
     background: none;
+}
+
+#doomed_dog {
+    transition: all 0.3s ease-out 0s;
 }

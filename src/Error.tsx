@@ -2,13 +2,14 @@ import React, { useEffect } from 'react';
 import './Error.css';
 
 function Error() {
-  useEffect(() => {
-    document.title = 'Page Not Found';
-  }, []);
+    useEffect(() => {
+      document.title = 'Page Not Found';
+    }, []);
+
   return (
-    <div id='error'>
-    <h1>Error 404</h1>
-    <p>Sucks to go to the wrong page right?</p>
+    <div id='Error'>
+      <h1>Error 404</h1>
+      <p>Sucks to go to the wrong page right?</p>
     </div>
   );
 }

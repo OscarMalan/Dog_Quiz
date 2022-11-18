@@ -1,29 +1,44 @@
-import { useState } from "react";
-import React, { useEffect } from 'react';
+import React, { useEffect, useState} from 'react';
+import { useNavigate } from "react-router-dom";
 import './Begin_Test.css';
 
-export let UserName: any;
+let Username: any;
 
 function Begin_Test() {
   useEffect(() => {
     document.title = 'Signing into Test';
-  }, []);
-  const [Data,Set_Data]=useState(null)
-  function Get_Data(val: any){
-    Set_Data(val.target.value)
     
+      fetch('https://b4rktd62ol.execute-api.eu-west-2.amazonaws.com/items')
+      .then((Response) => Response.json())
+      .then((Data) => {
+        const Id = Data.Count + 1;
+        sessionStorage.setItem('id', Id.toString());
+      });
+    }, []);
+  
+    let navigate = useNavigate();
+
+    const [Data,Set_Data]=useState(null)
+  function Get_Data(Val: any) {
+    Set_Data(Val.target.value)
   }
+  
   function Store_Name() {
-    if (Data === null){}
-    else {UserName = Data;}
-    console.log(UserName);
+    if (Data === null || Data == ""){}
+    else {
+      Username = Data;
+      sessionStorage.setItem('Username', Username.toString());
+      navigate('/test')
+    }
   }
+
   return (
     <div id="Begin_Test">
       <h1>Time to begin the Test</h1>
-      <p>Please enter a username</p>
-      <input type="text" onChange={Get_Data} />
+      <p>Please enter a Username for the test. This will be used for you to help reference you on the leaderboard.</p>
+      <input type="text" onChange={Get_Data} placeholder="Your name" />
       <button onClick={Store_Name}>button</button>
+      <img src={require("./Golden.png")} alt="good doggo" />
     </div>
   );
 }

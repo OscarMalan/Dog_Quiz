@@ -1,35 +1,49 @@
-import React, { useEffect } from 'react';
-import data from './User_Data.json';
+import React, { useEffect, useState } from 'react';
 
-for (let i = 0; i < data.length; i++){
-  const Username_Column = document.createElement("tr");
-  const node = document.createTextNode(data[i].Username);
-  Username_Column.appendChild(node);
-  const element = document.getElementById("Data");
-  element?.appendChild(Username_Column);
+interface LeaderboardDataItem {
+  id: number,
+  Username: string,
+  Score: number,
 }
 
-function Admin() {
+function Leaderboard() {
+  const [Data, setData] = useState<LeaderboardDataItem[]>([]);
+
   useEffect(() => {
     document.title = 'Leaderboard';
-  }, []);
+
+    fetch('https://b4rktd62ol.execute-api.eu-west-2.amazonaws.com/items')
+      .then((response) => response.json())
+      .then((Data) => setData(Data.Items));
+}, []);
+
+// TSX wants this encase there are no entries, and since it is actually possible good thing it exists
+if (Data.length === 0) {
   return (
+    <p>oops!! There are no records</p>
+  );
+}
+
+return (
     <div id="Leaderboard">
-        <h1>Leaderboard</h1>
-        <table>
+    <h1>Leaderboard</h1>
+      <table>
+        <tbody>
           <tr >
             <th>Username</th>
             <th>Score</th>
           </tr>
-            {data.map((user) => {
-              return (<tr>
-                <td>{user.Username}</td>
-                <td>{user.Score}/11</td>
-                </tr>);
-            })}
-        </table>
-    </div>
+          {/* Makes table that will constantly update with new users */}
+          {Data.map((User) => {
+            return (<tr key={User.id}>
+              <td>{User.Username}</td>
+              <td>{User.Score}/11</td>
+            </tr>);
+          })}
+        </tbody>
+      </table>
+  </div>
   );
 }
 
-export default Admin;
+export default Leaderboard;
